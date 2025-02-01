@@ -1,6 +1,6 @@
 <template>
   <header
-    class="bg-neutral-950 grid grid-cols-3 border-b-4 border-b-neutral-700 justify-between items-center p-3"
+    class="bg-neutral-950 grid grid-cols-3 justify-between items-center p-3"
   >
     <div>
       <button
@@ -14,9 +14,9 @@
         />
       </button>
     </div>
-    <div class="gap-2 flex">
+    <div class="gap-3 flex">
       <button
-        class="bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer hover:scale-110"
+        class="hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
       >
         <img
           src="/icons/navigation/home.png"
@@ -26,11 +26,11 @@
         />
       </button>
       <form
-        class="flex gap-2 hover:bg-neutral-800 bg-neutral-800 rounded-full px-2 w-full"
+        class="flex gap-2 hover:bg-neutral-800 bg-neutral-800 rounded-full px-2 w-full focus:ring-4 focus:ring-neutral-100/25"
         action=""
       >
         <button
-          class="p-2 rounded-full hover:scale-105 transition-all duration-75 cursor-pointer"
+          class="hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
         >
           <img
             src="/icons/navigation/search.png"
@@ -46,7 +46,7 @@
         />
       </form>
       <button
-        class="bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer hover:scale-110"
+        class="hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
       >
         <img
           src="/icons/navigation/explore.png"
@@ -58,7 +58,7 @@
     </div>
     <div class="flex justify-end">
       <button
-        class="hover:bg-neutral-800 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
+        class="hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
       >
         <img
           src="/icons/navigation/profile.png"

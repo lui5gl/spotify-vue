@@ -19,13 +19,13 @@ const handleTogglePlay = () => {
 
 <template>
   <footer
-    class="bg-neutral-950 grid grid-cols-3 border-t-4 border-t-neutral-700 justify-between items-center p-3"
+    class="bg-neutral-950 grid grid-cols-3 justify-between items-center p-3"
   >
     <div></div>
     <div class="flex justify-center gap-2 flex-col">
-      <div class="flex justify-center gap-2">
+      <div class="flex justify-center gap-3">
         <button
-          class="hover:bg-neutral-800 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
+          class="hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
         >
           <img
             src="/icons/player/player-start.png"
@@ -36,7 +36,7 @@ const handleTogglePlay = () => {
         </button>
         <button
           @click="handleTogglePlay()"
-          class="hover:bg-neutral-800 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
+          class="hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
         >
           <img
             v-if="isPlaying === true"
@@ -55,7 +55,7 @@ const handleTogglePlay = () => {
           />
         </button>
         <button
-          class="hover:bg-neutral-800 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
+          class="hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
         >
           <img
             src="/icons/player/player-end.png"
