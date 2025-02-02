@@ -1,6 +1,6 @@
 <template>
   <header
-    class="bg-neutral-950 grid grid-cols-3 justify-between items-center p-3"
+    class="bg-neutral-950 h-20 grid grid-cols-3 justify-between items-center p-3 fixed w-full"
   >
     <section>
       <button

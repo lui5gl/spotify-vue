@@ -23,7 +23,7 @@ const handleTogglePlay = () => {
 
 <template>
   <footer
-    class="bg-neutral-950 grid grid-cols-3 justify-between items-center p-3"
+    class="bg-neutral-950 grid grid-cols-3 justify-between items-center p-3 fixed h-20 bottom-0 w-full"
   >
     <section>
       <div class="flex gap-2 hover:bg-neutral-800 w-fit p-2 rounded-sm">

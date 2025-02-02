@@ -118,7 +118,7 @@ const playlist = [
 </script>
 
 <template>
-  <main class="flex flex-col gap-5">
+  <main class="flex flex-col gap-5 my-20">
     <section class="bg-gradient-to-b from-sky-500 pt-10">
       <div class="w-full max-w-2xl flex gap-5 justify-center items-end mx-auto">
         <img src="/images/The-Beatles.png" alt="" class="w-full max-w-64" />
