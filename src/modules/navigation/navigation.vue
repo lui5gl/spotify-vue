@@ -26,11 +26,11 @@
         />
       </button>
       <form
-        class="flex gap-2 hover:bg-neutral-800 bg-neutral-800 rounded-full px-2 w-full focus:ring-4 focus:ring-neutral-100/25"
+        class="flex gap-2 hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 bg-neutral-800 rounded-full px-2 w-full focus:ring-4 focus:ring-neutral-100/25"
         action=""
       >
         <button
-          class="hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
+          class="hover:bg-neutral-800 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
         >
           <img
             src="/icons/navigation/search.png"
