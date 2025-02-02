@@ -2,7 +2,7 @@
   <header
     class="bg-neutral-950 grid grid-cols-3 justify-between items-center p-3"
   >
-    <div>
+    <section>
       <button
         class="hover:bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
       >
@@ -13,8 +13,8 @@
           alt="Spotify Logo"
         />
       </button>
-    </div>
-    <div class="gap-3 flex">
+    </section>
+    <section class="gap-3 flex">
       <button
         class="hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
       >
@@ -55,8 +55,8 @@
           alt="Spotify Logo"
         />
       </button>
-    </div>
-    <div class="flex justify-end">
+    </section>
+    <section class="flex justify-end">
       <button
         class="hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
       >
@@ -67,6 +67,6 @@
           alt="Profile picture"
         />
       </button>
-    </div>
+    </section>
   </header>
 </template>
