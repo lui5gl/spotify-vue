@@ -1,6 +1,13 @@
 <script setup lang="ts">
-import Player from "./modules/player/player.vue";
+import { ref } from "vue";
 import Navigation from "./modules/navigation/navigation.vue";
+import Player from "./modules/player/player.vue";
+
+const isPlaying = ref<boolean>(false);
+
+const handleTogglePlay = () => {
+  isPlaying.value = !isPlaying.value;
+};
 </script>
 
 <template>
@@ -26,13 +33,23 @@ import Navigation from "./modules/navigation/navigation.vue";
 
       <section class="w-full max-w-2xl mx-auto">
         <button
+          @click="handleTogglePlay"
           class="hover:bg-green-500 hover:scale-110 bg-green-400 p-2 rounded-full transition-all duration-75 cursor-pointer"
         >
           <img
+            v-if="isPlaying === true"
             src="/icons/player/play.png"
-            width="32"
-            height="32"
-            alt="Spotify Logo"
+            width="24"
+            height="24"
+            alt="player play"
+          />
+
+          <img
+            v-if="isPlaying === false"
+            src="/icons/player/pause.png"
+            width="24"
+            height="24"
+            alt="player pause"
           />
         </button>
       </section>
@@ -54,7 +71,7 @@ import Navigation from "./modules/navigation/navigation.vue";
         </table>
       </section>
     </main>
-    <Player />
+    <Player :is-playing="isPlaying" @toggle-play="handleTogglePlay" />
   </main>
 </template>
 

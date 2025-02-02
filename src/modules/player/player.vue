@@ -4,7 +4,11 @@ import { ref } from "vue";
 const remaining = ref<number>(0);
 const secondsOfDuration = 140;
 
-const isPlaying = ref<boolean>(false);
+defineProps({
+  isPlaying: Boolean,
+});
+
+const emit = defineEmits(["togglePlay"]);
 
 const minutesRemaining = Math.floor(secondsOfDuration / 60);
 const secondsRemaining = secondsOfDuration % 60;
@@ -13,7 +17,7 @@ const durationMinutes = Math.floor(secondsOfDuration / 60);
 const durationSeconds = secondsOfDuration % 60;
 
 const handleTogglePlay = () => {
-  isPlaying.value = !isPlaying.value;
+  emit("togglePlay");
 };
 </script>
 
