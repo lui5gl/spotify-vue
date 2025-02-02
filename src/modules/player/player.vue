@@ -21,9 +21,29 @@ const handleTogglePlay = () => {
   <footer
     class="bg-neutral-950 grid grid-cols-3 justify-between items-center p-3"
   >
-    <div></div>
-    <div class="flex justify-center gap-2 flex-col">
-      <div class="flex justify-center gap-3">
+    <section>
+      <div class="flex gap-2 hover:bg-neutral-800 w-fit p-2 rounded-sm">
+        <img src="/images/The-Beatles.png" alt="" class="w-full max-w-15" />
+        <div class="flex flex-col justify-center">
+          <span class="text-neutral-100 font-semibold">
+            Here Comes The Sun - Remastered 2009
+          </span>
+          <p class="text-neutral-100 text-sm">The Beatles</p>
+        </div>
+      </div>
+    </section>
+    <section class="flex justify-center gap-2 flex-col">
+      <div class="flex justify-center gap-3 items-center">
+        <button
+          class="hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 hover:scale-105 bg-neutral-800 p-1 w-fit h-fit rounded-full transition-all duration-75 cursor-pointer"
+        >
+          <img
+            src="/icons/player/shuffle.png"
+            width="18"
+            height="18"
+            alt="player start"
+          />
+        </button>
         <button
           class="hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
         >
@@ -64,6 +84,16 @@ const handleTogglePlay = () => {
             alt="player end"
           />
         </button>
+        <button
+          class="hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 hover:scale-105 bg-neutral-800 p-1 w-fit h-fit rounded-full transition-all duration-75 cursor-pointer"
+        >
+          <img
+            src="/icons/player/repeat.png"
+            width="18"
+            height="18"
+            alt="player start"
+          />
+        </button>
       </div>
       <div class="flex gap-2 items-center justify-center">
         <span class="text-neutral-400 text-sm font-semibold whitespace-nowrap">
@@ -74,6 +104,6 @@ const handleTogglePlay = () => {
           {{ durationMinutes }}:{{ durationSeconds }}
         </span>
       </div>
-    </div>
+    </section>
   </footer>
 </template>
