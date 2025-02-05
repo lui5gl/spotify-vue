@@ -11,9 +11,11 @@ const handleTogglePlay = () => {
 </script>
 
 <template>
-  <section class="bg-gradient-to-b from-sky-500 py-10 flex flex-col gap-5">
-    <div class="w-full max-w-2xl flex gap-5 justify-center items-end mx-auto">
-      <img src="/images/The-Beatles.png" alt="" class="w-full max-w-64" />
+  <section class="bg-gradient-to-b from-sky-500 p-10 flex flex-col gap-5 ">
+    <div
+      class="w-full max-w-2xl flex gap-5 justify-center items-end mx-auto flex-col md:flex-row"
+    >
+      <img src="/images/The-Beatles.png" alt="" class="w-32 md:w-64" />
       <div class="flex flex-col gap-3">
         <span class="text-neutral-100">Álbum</span>
         <span class="text-neutral-100 font-bold text-5xl">

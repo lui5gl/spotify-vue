@@ -1,8 +1,8 @@
 <template>
   <header
-    class="bg-neutral-950 h-20 grid grid-cols-3 justify-between items-center p-3 fixed w-full"
+    class="bg-neutral-950 h-20 md:grid md:grid-cols-3 justify-between items-center p-3 fixed w-full"
   >
-    <section>
+    <section class="hidden md:flex">
       <button
         class="hover:bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
       >
@@ -26,7 +26,7 @@
         />
       </button>
       <form
-        class="flex gap-2 hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 bg-neutral-800 rounded-full px-2 w-full focus:ring-4 focus:ring-neutral-100/25"
+        class="flex gap-2 items-center justify-center hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 bg-neutral-800 rounded-full px-2 w-full focus:ring-4 focus:ring-neutral-100/25"
         action=""
       >
         <button
@@ -53,18 +53,6 @@
           width="32"
           height="32"
           alt="Spotify Logo"
-        />
-      </button>
-    </section>
-    <section class="flex justify-end">
-      <button
-        class="hover:bg-neutral-800 hover:ring-4 ring-neutral-100/25 hover:scale-105 bg-neutral-800 p-2 rounded-full transition-all duration-75 cursor-pointer"
-      >
-        <img
-          src="/icons/navigation/profile.png"
-          width="24"
-          height="24"
-          alt="Profile picture"
         />
       </button>
     </section>

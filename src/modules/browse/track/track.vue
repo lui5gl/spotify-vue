@@ -9,6 +9,7 @@ defineProps({
 
 <template>
   <tr
+    @click="console.log('clicked')"
     class="text-neutral-100 [&>td]:py-4 hover:cursor-pointer hover:bg-neutral-800 rounded-sm"
   >
     <td class="text-right px-2">{{ id }}</td>

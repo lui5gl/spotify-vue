@@ -23,9 +23,9 @@ const handleTogglePlay = () => {
 
 <template>
   <footer
-    class="bg-neutral-950 grid grid-cols-3 justify-between items-center p-3 fixed h-20 bottom-0 w-full"
+    class="bg-neutral-950 md:grid sm:grid-cols-2 md:grid-cols-3 justify-between items-center p-3 fixed h-20 bottom-0 w-full"
   >
-    <section>
+    <section class="hidden md:flex">
       <div class="flex gap-2 hover:bg-neutral-800 w-fit p-2 rounded-sm">
         <img src="/images/The-Beatles.png" alt="" class="w-full max-w-15" />
         <div class="flex flex-col justify-center">
