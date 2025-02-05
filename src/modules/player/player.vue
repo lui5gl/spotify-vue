@@ -64,18 +64,18 @@ const handleTogglePlay = () => {
         >
           <img
             v-if="isPlaying === true"
-            src="/icons/player/play.png"
+            src="/icons/player/pause.png"
             width="24"
             height="24"
-            alt="player play"
+            alt="Player pause"
           />
 
           <img
             v-if="isPlaying === false"
-            src="/icons/player/pause.png"
+            src="/icons/player/play.png"
             width="24"
             height="24"
-            alt="player pause"
+            alt="Player play"
           />
         </button>
         <button
