@@ -18,4 +18,3 @@ const handleTogglePlay = () => {
     <Player :is-playing="isPlaying" @toggle-play="handleTogglePlay" />
   </main>
 </template>
-
